@@ -21,6 +21,35 @@
             font-weight: 600;
             box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.514);
         }
+            @media (max-width: 111rem) {
+                .container {
+                    margin: 8rem 27rem 9rem 27rem;
+                }
+            }
+
+            @media (max-width: 85rem) {
+                .container {
+                    margin: 8rem 12rem 9rem 12rem;
+                    padding: 2rem 1rem 3rem 1rem;
+                }
+            }
+
+            @media (max-width: 60rem) {
+                .container {
+                    margin: 6rem 6rem 6rem 6rem;
+
+                }
+            }
+
+            @media (max-width: 45rem) {
+                .container {
+                    margin: 3rem 2rem 3rem 2rem;
+                }
+            }
+
+        .form {
+            position: relative;
+        }
 
         input {
             margin: .5rem;
@@ -28,6 +57,16 @@
         select {
             margin: .5rem;
         }
+
+        /* #submit {
+            background-color: white;
+            color: rgb(110, 105, 185);
+            padding: .5rem;
+        }
+            #submit:hover {
+                background-color: rgb(110, 105, 185);
+                color: white;
+            } */
         
 
     </style>
@@ -59,7 +98,7 @@
                         <option value="item3">item3</option>
                         <option value="item4">item4</option>
                     </select></label><br>
-                <label for="comments"><textarea name="comments" id="comments" cols="50" rows="7" placeholder="Comments"></textarea></label><br><!--TEXTAREA-->
+                <label for="comments"><textarea name="comments" id="comments" cols="35" rows="7" placeholder="Comments"></textarea></label><br><!--TEXTAREA-->
                 <label for="button"><button type="submit" id="submit">Submit</button></label><br>
             </form>
         </div>
