@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+
+        body {
+            background-color: rgb(41, 41, 41);
+        }
+
+        .container {
+            margin: 9rem 40rem 10rem 40rem;
+            padding: 2rem 4rem 3rem 4rem;
+            background-color: white;
+            border: solid black .4rem;
+            background: linear-gradient(45deg, rgb(110, 105, 185), white);
+            font-family: sans-serif;
+            font-weight: 600;
+            box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.514);
+        }
+            @media (max-width: 111rem) {
+                .container {
+                    margin: 8rem 27rem 9rem 27rem;
+                }
+            }
+
+            @media (max-width: 85rem) {
+                .container {
+                    margin: 8rem 12rem 9rem 12rem;
+                    padding: 2rem 1rem 3rem 1rem;
+                }
+            }
+
+            @media (max-width: 60rem) {
+                .container {
+                    margin: 6rem 6rem 6rem 6rem;
+
+                }
+            }
+
+            @media (max-width: 45rem) {
+                .container {
+                    margin: 3rem 2rem 3rem 2rem;
+                }
+            }
+
+        .form {
+            position: relative;
+        }
+
+        input {
+            margin: .5rem;
+        }
+        select {
+            margin: .5rem;
+        }
+
+        /* #submit {
+            background-color: white;
+            color: rgb(110, 105, 185);
+            padding: .5rem;
+        }
+            #submit:hover {
+                background-color: rgb(110, 105, 185);
+                color: white;
+            } */
+        
+
+    </style>
+</head>
+<body>
+
+    <!--SECTION-->
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form project.</p>
+        <div class="form">
+            <form id="survey-form" action="#"><!--dont forget method="POST"-->
+                <label for="name" id="name-label">Name:<input type="text" placeholder="Enter name" id="name" required></label><br> <!--NAME-->
+                <label for="email" id="email-label">Email:<input type="email" placeholder="Enter email" required id="email"></label><br><!--EMAIL dont forget name=""-->
+                <label for="phone">Phone: <input type="tel"  placeholder="Format: 123-456-7890" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                <label for="number" id="number-label">Age:<input type="number" placeholder="Enter age" min="10" max="100" id="number" required></label><br><!--NUMBER-->
+                <label for="radio">Select one:<input type="radio" name="radio" value="first">First</label><!--RADIO INPUT-->
+                <label for="radio"><input type="radio" name="radio" value="second">Second</label>
+                <label for="radio"><input type="radio" name="radio" value="third">Third</label>
+                <label for="radio"><input type="radio" name="radio" value="fourth">Fourth</label>
+                <br>
+                <label for="checkbox"><input type="checkbox" value="check1">check1</label><!--CHECKBOX INPUT-->
+                <label for="checkbox"><input type="checkbox" value="check2">check2</label><br>
+                <label for="checkbox"><input type="checkbox" value="check3">check3</label>
+                <label for="checkbox"><input type="checkbox" value="check4">check4</label><br>
+                <label for="dropdown">Select:<!--DROPDOWN-->
+                    <select name="dropdown" id="dropdown">
+                        <option value="item1">item1</option>
+                        <option value="item2">item2</option>
+                        <option value="item3">item3</option>
+                        <option value="item4">item4</option>
+                    </select></label><br>
+                <label for="comments"><textarea name="comments" id="comments" cols="35" rows="7" placeholder="Comments"></textarea></label><br><!--TEXTAREA-->
+                <label for="button"><button type="submit" id="submit">Submit</button></label><br>
+            </form>
+        </div>
+    </div>
+    <!--SECTION-->
+</body>
+</html>
